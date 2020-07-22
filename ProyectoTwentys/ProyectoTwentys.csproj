@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF53F164-EB86-4BC5-BA54-47A5BC7E0DE8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoTwentys</RootNamespace>
+    <AssemblyName>ProyectoTwentys</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ProyectoTwentys.UI\Balances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Balances.Designer.cs">
+      <DependentUpon>Balances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Vales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Vales.Designer.cs">
+      <DependentUpon>Vales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Dolares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Dolares.Designer.cs">
+      <DependentUpon>Dolares.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Efectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Efectivo.Designer.cs">
+      <DependentUpon>Efectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\CCSS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\CCSS.Designer.cs">
+      <DependentUpon>CCSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\CuentasPorCobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\CuentasPorCobrar.Designer.cs">
+      <DependentUpon>CuentasPorCobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Planilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Planilla.Designer.cs">
+      <DependentUpon>Planilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Vacaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Vacaciones.Designer.cs">
+      <DependentUpon>Vacaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\SobrantesYFaltantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\SobrantesYFaltantes.Designer.cs">
+      <DependentUpon>SobrantesYFaltantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Viaticos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Viaticos.Designer.cs">
+      <DependentUpon>Viaticos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\IngresosVarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\IngresosVarios.Designer.cs">
+      <DependentUpon>IngresosVarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Deudas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Deudas.Designer.cs">
+      <DependentUpon>Deudas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\GastosExtraordinarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\GastosExtraordinarios.Designer.cs">
+      <DependentUpon>GastosExtraordinarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\GastosFijos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\GastosFijos.Designer.cs">
+      <DependentUpon>GastosFijos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\GastosAdministrativos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\GastosAdministrativos.Designer.cs">
+      <DependentUpon>GastosAdministrativos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Publicidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Publicidad.Designer.cs">
+      <DependentUpon>Publicidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\GastosVarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\GastosVarios.Designer.cs">
+      <DependentUpon>GastosVarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\CambiarContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\.Designer.cs">
+      <DependentUpon>CambiarContrasena.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\CuentasPorPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\CuentasPorPagar.Designer.cs">
+      <DependentUpon>CuentasPorPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\InicioDeSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProyectoTwentys.UI\InicioDeSesion.Designer.cs">
+      <DependentUpon>InicioDeSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ProyectoTwentys.UI\Balances.resx">
+      <DependentUpon>Balances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Vales.resx">
+      <DependentUpon>Vales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Dolares.resx">
+      <DependentUpon>Dolares.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Efectivo.resx">
+      <DependentUpon>Efectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\CCSS.resx">
+      <DependentUpon>CCSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\CuentasPorCobrar.resx">
+      <DependentUpon>CuentasPorCobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Planilla.resx">
+      <DependentUpon>Planilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Vacaciones.resx">
+      <DependentUpon>Vacaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\SobrantesYFaltantes.resx">
+      <DependentUpon>SobrantesYFaltantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Viaticos.resx">
+      <DependentUpon>Viaticos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\IngresosVarios.resx">
+      <DependentUpon>IngresosVarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Deudas.resx">
+      <DependentUpon>Deudas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\GastosExtraordinarios.resx">
+      <DependentUpon>GastosExtraordinarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\GastosFijos.resx">
+      <DependentUpon>GastosFijos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\GastosAdministrativos.resx">
+      <DependentUpon>GastosAdministrativos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Publicidad.resx">
+      <DependentUpon>Publicidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\GastosVarios.resx">
+      <DependentUpon>GastosVarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\CambiarContrasena.resx">
+      <DependentUpon>CambiarContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\CuentasPorPagar.resx">
+      <DependentUpon>CuentasPorPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProyectoTwentys.UI\InicioDeSesion.resx">
+      <DependentUpon>InicioDeSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31531228_2101083396792298_7844308400895688704_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProyectoTwentys.Business\" />
+    <Folder Include="ProyectoTwentys.DataAccess\" />
+    <Folder Include="ProyectoTwentys.Model\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
