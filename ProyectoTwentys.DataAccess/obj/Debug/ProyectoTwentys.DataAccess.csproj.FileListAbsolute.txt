@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys.DataAccess\bin\Debug\ProyectoTwentys.DataAccess.dll
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys.DataAccess\bin\Debug\ProyectoTwentys.DataAccess.pdb
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys.DataAccess\obj\Debug\ProyectoTwentys.DataAccess.csprojAssemblyReference.cache
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys.DataAccess\obj\Debug\ProyectoTwentys.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys.DataAccess\obj\Debug\ProyectoTwentys.DataAccess.dll
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys.DataAccess\obj\Debug\ProyectoTwentys.DataAccess.pdb

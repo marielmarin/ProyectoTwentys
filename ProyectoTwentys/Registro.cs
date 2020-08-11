@@ -49,7 +49,7 @@ namespace ProyectoTwentys
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
             if (txtUsuario.Text == "USUARIO") {
-              //  txtUsuario.Text = "";
+                txtUsuario.Text = "";
                 txtUsuario.ForeColor = Color.Black;
             }
         }
@@ -108,8 +108,29 @@ namespace ProyectoTwentys
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            InicioDeSesion inicioDeSesion = new InicioDeSesion();
-            inicioDeSesion.ShowDialog();
+
+            //if (txtContrasena.Text == txtConfirmarContrasena.Text) {
+
+
+            //    if (ProyectoTwentys.DataAccess.PD_Usuarios.CrearCuentas(txtUsuario.Text, txtContrasena.Text) > 0)
+            //    {
+
+            //        MessageBox.Show("Cuenta creada con éxito");
+
+                    InicioDeSesion inicioDeSesion = new InicioDeSesion();
+                    inicioDeSesion.ShowDialog();
+
+
+                //}
+                //else {
+
+                //    MessageBox.Show("No se pudo crear la cuenta");
+                //}
+
+
+           // }
+
+           
 
         }
 
