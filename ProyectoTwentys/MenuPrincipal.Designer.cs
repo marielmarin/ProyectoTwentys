@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
@@ -79,6 +80,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.BarraTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -89,6 +91,7 @@
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.Color.Tomato;
+            this.BarraTitulo.Controls.Add(this.pictureBox1);
             this.BarraTitulo.Controls.Add(this.btnRestaurar);
             this.BarraTitulo.Controls.Add(this.btnMaximizar);
             this.BarraTitulo.Controls.Add(this.btnMinimizar);
@@ -99,6 +102,18 @@
             this.BarraTitulo.Size = new System.Drawing.Size(1231, 38);
             this.BarraTitulo.TabIndex = 0;
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1092, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // btnRestaurar
             // 
@@ -233,7 +248,8 @@
             this.btnVales.Name = "btnVales";
             this.btnVales.Size = new System.Drawing.Size(208, 32);
             this.btnVales.TabIndex = 21;
-            this.btnVales.Text = "Vales ";
+            this.btnVales.Text = "        Vales ";
+            this.btnVales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVales.UseVisualStyleBackColor = true;
             this.btnVales.Click += new System.EventHandler(this.btnVales_Click);
             // 
@@ -266,7 +282,8 @@
             this.btnDolares.Name = "btnDolares";
             this.btnDolares.Size = new System.Drawing.Size(208, 32);
             this.btnDolares.TabIndex = 19;
-            this.btnDolares.Text = "Dolares ";
+            this.btnDolares.Text = "        Dolares ";
+            this.btnDolares.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDolares.UseVisualStyleBackColor = true;
             this.btnDolares.Click += new System.EventHandler(this.btnDolares_Click);
             // 
@@ -283,7 +300,8 @@
             this.btnCuentasPorCobrar.Name = "btnCuentasPorCobrar";
             this.btnCuentasPorCobrar.Size = new System.Drawing.Size(208, 32);
             this.btnCuentasPorCobrar.TabIndex = 19;
-            this.btnCuentasPorCobrar.Text = "Cuentas por Cobrar ";
+            this.btnCuentasPorCobrar.Text = "        Cuentas por Cobrar ";
+            this.btnCuentasPorCobrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCuentasPorCobrar.UseVisualStyleBackColor = true;
             this.btnCuentasPorCobrar.Click += new System.EventHandler(this.btnCuentasPorCobrar_Click);
             // 
@@ -300,7 +318,8 @@
             this.btnGastosAdministrativos.Name = "btnGastosAdministrativos";
             this.btnGastosAdministrativos.Size = new System.Drawing.Size(208, 32);
             this.btnGastosAdministrativos.TabIndex = 3;
-            this.btnGastosAdministrativos.Text = "Gastos Administrativos";
+            this.btnGastosAdministrativos.Text = "        Gastos Administrativos";
+            this.btnGastosAdministrativos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGastosAdministrativos.UseVisualStyleBackColor = true;
             this.btnGastosAdministrativos.Click += new System.EventHandler(this.btnGastosAdministrativos_Click);
             // 
@@ -325,7 +344,8 @@
             this.btnPublicidad.Name = "btnPublicidad";
             this.btnPublicidad.Size = new System.Drawing.Size(208, 32);
             this.btnPublicidad.TabIndex = 7;
-            this.btnPublicidad.Text = "Publicidad";
+            this.btnPublicidad.Text = "        Publicidad";
+            this.btnPublicidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPublicidad.UseVisualStyleBackColor = true;
             this.btnPublicidad.Click += new System.EventHandler(this.btnPublicidad_Click);
             // 
@@ -382,7 +402,8 @@
             this.btnGastosExtraordinarios.Name = "btnGastosExtraordinarios";
             this.btnGastosExtraordinarios.Size = new System.Drawing.Size(208, 32);
             this.btnGastosExtraordinarios.TabIndex = 3;
-            this.btnGastosExtraordinarios.Text = "Gastos Extraordinarios";
+            this.btnGastosExtraordinarios.Text = "        Gastos Extraordinarios";
+            this.btnGastosExtraordinarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGastosExtraordinarios.UseVisualStyleBackColor = true;
             this.btnGastosExtraordinarios.Click += new System.EventHandler(this.btnGastosExtraordinarios_Click);
             // 
@@ -399,7 +420,8 @@
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(208, 32);
             this.btnEmpleados.TabIndex = 5;
-            this.btnEmpleados.Text = "Empleados";
+            this.btnEmpleados.Text = "        Empleados";
+            this.btnEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmpleados.UseVisualStyleBackColor = true;
             this.btnEmpleados.Click += new System.EventHandler(this.btnEmpleados_Click);
             // 
@@ -416,7 +438,8 @@
             this.btnVacaciones.Name = "btnVacaciones";
             this.btnVacaciones.Size = new System.Drawing.Size(208, 32);
             this.btnVacaciones.TabIndex = 11;
-            this.btnVacaciones.Text = "Vacaciones ";
+            this.btnVacaciones.Text = "        Vacaciones ";
+            this.btnVacaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVacaciones.UseVisualStyleBackColor = true;
             this.btnVacaciones.Click += new System.EventHandler(this.btnVacaciones_Click);
             // 
@@ -457,7 +480,8 @@
             this.btnDeudas.Name = "btnDeudas";
             this.btnDeudas.Size = new System.Drawing.Size(208, 32);
             this.btnDeudas.TabIndex = 12;
-            this.btnDeudas.Text = "Deudas ";
+            this.btnDeudas.Text = "        Deudas ";
+            this.btnDeudas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDeudas.UseVisualStyleBackColor = true;
             this.btnDeudas.Click += new System.EventHandler(this.btnDeudas_Click);
             // 
@@ -474,7 +498,8 @@
             this.btnGastosFijos.Name = "btnGastosFijos";
             this.btnGastosFijos.Size = new System.Drawing.Size(208, 32);
             this.btnGastosFijos.TabIndex = 3;
-            this.btnGastosFijos.Text = "Gastos Fijos";
+            this.btnGastosFijos.Text = "        Gastos Fijos";
+            this.btnGastosFijos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGastosFijos.UseVisualStyleBackColor = true;
             this.btnGastosFijos.Click += new System.EventHandler(this.btnGastosFijos_Click);
             // 
@@ -491,7 +516,8 @@
             this.btnPlanilla.Name = "btnPlanilla";
             this.btnPlanilla.Size = new System.Drawing.Size(208, 32);
             this.btnPlanilla.TabIndex = 15;
-            this.btnPlanilla.Text = "Planilla ";
+            this.btnPlanilla.Text = "        Planilla ";
+            this.btnPlanilla.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPlanilla.UseVisualStyleBackColor = true;
             this.btnPlanilla.Click += new System.EventHandler(this.btnPlanilla_Click);
             // 
@@ -508,7 +534,8 @@
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Size = new System.Drawing.Size(208, 32);
             this.btnVentas.TabIndex = 3;
-            this.btnVentas.Text = "Ventas";
+            this.btnVentas.Text = "        Ventas";
+            this.btnVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVentas.UseVisualStyleBackColor = true;
             this.btnVentas.Click += new System.EventHandler(this.btnVentas_Click);
             // 
@@ -525,7 +552,8 @@
             this.btnCCSS.Name = "btnCCSS";
             this.btnCCSS.Size = new System.Drawing.Size(208, 32);
             this.btnCCSS.TabIndex = 14;
-            this.btnCCSS.Text = "CCSS";
+            this.btnCCSS.Text = "        CCSS";
+            this.btnCCSS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCCSS.UseVisualStyleBackColor = true;
             this.btnCCSS.Click += new System.EventHandler(this.btnCCSS_Click);
             // 
@@ -551,14 +579,15 @@
             this.btnCuentasPorPagar.FlatAppearance.BorderSize = 0;
             this.btnCuentasPorPagar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
             this.btnCuentasPorPagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCuentasPorPagar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCuentasPorPagar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCuentasPorPagar.Image = ((System.Drawing.Image)(resources.GetObject("btnCuentasPorPagar.Image")));
             this.btnCuentasPorPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCuentasPorPagar.Location = new System.Drawing.Point(12, 79);
             this.btnCuentasPorPagar.Name = "btnCuentasPorPagar";
             this.btnCuentasPorPagar.Size = new System.Drawing.Size(208, 32);
             this.btnCuentasPorPagar.TabIndex = 5;
-            this.btnCuentasPorPagar.Text = "Cuentas Por Pagar ";
+            this.btnCuentasPorPagar.Text = "        Cuentas Por Pagar ";
+            this.btnCuentasPorPagar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCuentasPorPagar.UseVisualStyleBackColor = true;
             this.btnCuentasPorPagar.Click += new System.EventHandler(this.btnCuentasPorPagar_Click);
             // 
@@ -583,7 +612,8 @@
             this.btnEfectivo.Name = "btnEfectivo";
             this.btnEfectivo.Size = new System.Drawing.Size(208, 32);
             this.btnEfectivo.TabIndex = 3;
-            this.btnEfectivo.Text = "Efectivo";
+            this.btnEfectivo.Text = "        Efectivo";
+            this.btnEfectivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEfectivo.UseVisualStyleBackColor = true;
             this.btnEfectivo.Click += new System.EventHandler(this.btnEfectivo_Click);
             // 
@@ -600,7 +630,8 @@
             this.btnViaticos.Name = "btnViaticos";
             this.btnViaticos.Size = new System.Drawing.Size(208, 32);
             this.btnViaticos.TabIndex = 13;
-            this.btnViaticos.Text = "Viáticos ";
+            this.btnViaticos.Text = "        Viáticos ";
+            this.btnViaticos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnViaticos.UseVisualStyleBackColor = true;
             this.btnViaticos.Click += new System.EventHandler(this.btnViaticos_Click);
             // 
@@ -617,7 +648,8 @@
             this.btnGastosVarios.Name = "btnGastosVarios";
             this.btnGastosVarios.Size = new System.Drawing.Size(208, 32);
             this.btnGastosVarios.TabIndex = 3;
-            this.btnGastosVarios.Text = "Gastos Varios";
+            this.btnGastosVarios.Text = "        Gastos Varios";
+            this.btnGastosVarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGastosVarios.UseVisualStyleBackColor = true;
             this.btnGastosVarios.Click += new System.EventHandler(this.btnGastosVarios_Click);
             // 
@@ -634,7 +666,8 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(208, 32);
             this.button1.TabIndex = 17;
-            this.button1.Text = "Sobrantes y Faltantes ";
+            this.button1.Text = "        Sobrantes y Faltantes ";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnSobrantesFaltantes_Click);
             // 
@@ -651,7 +684,8 @@
             this.btnBalances.Name = "btnBalances";
             this.btnBalances.Size = new System.Drawing.Size(208, 32);
             this.btnBalances.TabIndex = 7;
-            this.btnBalances.Text = "Balances ";
+            this.btnBalances.Text = "        Balances ";
+            this.btnBalances.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBalances.UseVisualStyleBackColor = true;
             this.btnBalances.Click += new System.EventHandler(this.btnBalances_Click);
             // 
@@ -700,7 +734,8 @@
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Size = new System.Drawing.Size(208, 32);
             this.btnProveedores.TabIndex = 1;
-            this.btnProveedores.Text = "Proveedores";
+            this.btnProveedores.Text = "        Proveedores";
+            this.btnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProveedores.UseVisualStyleBackColor = true;
             this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
@@ -717,7 +752,8 @@
             this.btnOtrosIngresos.Name = "btnOtrosIngresos";
             this.btnOtrosIngresos.Size = new System.Drawing.Size(208, 32);
             this.btnOtrosIngresos.TabIndex = 3;
-            this.btnOtrosIngresos.Text = "Otros Ingresos";
+            this.btnOtrosIngresos.Text = "        Otros Ingresos";
+            this.btnOtrosIngresos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOtrosIngresos.UseVisualStyleBackColor = true;
             this.btnOtrosIngresos.Click += new System.EventHandler(this.btnOtrosIngresos_Click);
             // 
@@ -751,6 +787,7 @@
             this.Name = "MenuPrincipal";
             this.Text = "Balances";
             this.BarraTitulo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
@@ -811,5 +848,6 @@
         private System.Windows.Forms.Button btnPublicidad;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Button btnCuentasPorPagar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

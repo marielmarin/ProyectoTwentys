@@ -15,9 +15,12 @@ namespace ProyectoTwentys
     {
         public MenuPrincipal()
         {
+            this.WindowState = FormWindowState.Maximized;        
             InitializeComponent();
+            btnMaximizar.Visible = false;
+            btnRestaurar.Visible = true;
         }
-
+        
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -46,7 +49,7 @@ namespace ProyectoTwentys
         {
             this.WindowState = FormWindowState.Normal;
             btnRestaurar.Visible = false;
-            btnRestaurar.Visible = true; 
+            btnMaximizar.Visible = true; 
         }
 
         private void BarraTitulo_MouseDown(object sender, MouseEventArgs e)
