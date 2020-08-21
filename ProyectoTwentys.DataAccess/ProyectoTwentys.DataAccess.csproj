@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="PD_Proveedores.cs" />
+    <Compile Include="PD_CuentasPorPagar.cs" />
+    <Compile Include="PD_ProveedoresTransacciones.cs" />
     <Compile Include="PD_Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

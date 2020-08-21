@@ -55,6 +55,18 @@
     <Compile Include="Balances.Designer.cs">
       <DependentUpon>Balances.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProveedoresConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedoresConsulta.Designer.cs">
+      <DependentUpon>ProveedoresConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedoresTransacciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedoresTransacciones.Designer.cs">
+      <DependentUpon>ProveedoresTransacciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +216,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Balances.resx">
       <DependentUpon>Balances.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedoresConsulta.resx">
+      <DependentUpon>ProveedoresConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedoresTransacciones.resx">
+      <DependentUpon>ProveedoresTransacciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vales.resx">
       <DependentUpon>Vales.cs</DependentUpon>

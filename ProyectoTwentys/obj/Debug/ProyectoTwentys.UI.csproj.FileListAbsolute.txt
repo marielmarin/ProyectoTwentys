@@ -39,3 +39,5 @@ C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwe
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.pdb
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\bin\Debug\ProyectoTwentys.Business.dll
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\bin\Debug\ProyectoTwentys.Business.pdb
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.Proveedores_Transacciones.resources
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.ProveedoresConsulta.resources

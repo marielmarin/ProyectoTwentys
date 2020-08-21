@@ -79,6 +79,8 @@
             this.btnOtrosIngresos = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.btnProveedoresTransacciones = new System.Windows.Forms.Button();
+            this.panel22 = new System.Windows.Forms.Panel();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
@@ -171,58 +173,60 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.White;
-            this.MenuVertical.Controls.Add(this.panel21);
             this.MenuVertical.Controls.Add(this.panel19);
-            this.MenuVertical.Controls.Add(this.btnVales);
+            this.MenuVertical.Controls.Add(this.btnProveedoresTransacciones);
+            this.MenuVertical.Controls.Add(this.btnPublicidad);
+            this.MenuVertical.Controls.Add(this.panel21);
             this.MenuVertical.Controls.Add(this.panel18);
+            this.MenuVertical.Controls.Add(this.panel22);
+            this.MenuVertical.Controls.Add(this.panel5);
+            this.MenuVertical.Controls.Add(this.btnVales);
+            this.MenuVertical.Controls.Add(this.btnOtrosIngresos);
             this.MenuVertical.Controls.Add(this.panel20);
             this.MenuVertical.Controls.Add(this.btnDolares);
             this.MenuVertical.Controls.Add(this.btnCuentasPorCobrar);
-            this.MenuVertical.Controls.Add(this.btnGastosAdministrativos);
+            this.MenuVertical.Controls.Add(this.panel4);
             this.MenuVertical.Controls.Add(this.panel12);
-            this.MenuVertical.Controls.Add(this.btnPublicidad);
+            this.MenuVertical.Controls.Add(this.panel6);
             this.MenuVertical.Controls.Add(this.panel11);
+            this.MenuVertical.Controls.Add(this.btnGastosAdministrativos);
             this.MenuVertical.Controls.Add(this.panel10);
+            this.MenuVertical.Controls.Add(this.panel2);
             this.MenuVertical.Controls.Add(this.panel9);
-            this.MenuVertical.Controls.Add(this.panel8);
+            this.MenuVertical.Controls.Add(this.btnGastosVarios);
             this.MenuVertical.Controls.Add(this.panel13);
-            this.MenuVertical.Controls.Add(this.btnGastosExtraordinarios);
+            this.MenuVertical.Controls.Add(this.btnEfectivo);
             this.MenuVertical.Controls.Add(this.btnEmpleados);
+            this.MenuVertical.Controls.Add(this.btnCuentasPorPagar);
+            this.MenuVertical.Controls.Add(this.panel3);
             this.MenuVertical.Controls.Add(this.btnVacaciones);
-            this.MenuVertical.Controls.Add(this.panel17);
+            this.MenuVertical.Controls.Add(this.btnVentas);
             this.MenuVertical.Controls.Add(this.panel14);
-            this.MenuVertical.Controls.Add(this.panel7);
+            this.MenuVertical.Controls.Add(this.panel8);
             this.MenuVertical.Controls.Add(this.btnDeudas);
             this.MenuVertical.Controls.Add(this.btnGastosFijos);
             this.MenuVertical.Controls.Add(this.btnPlanilla);
-            this.MenuVertical.Controls.Add(this.btnVentas);
+            this.MenuVertical.Controls.Add(this.panel7);
             this.MenuVertical.Controls.Add(this.btnCCSS);
-            this.MenuVertical.Controls.Add(this.panel3);
+            this.MenuVertical.Controls.Add(this.btnGastosExtraordinarios);
             this.MenuVertical.Controls.Add(this.panel15);
-            this.MenuVertical.Controls.Add(this.btnCuentasPorPagar);
+            this.MenuVertical.Controls.Add(this.panel17);
             this.MenuVertical.Controls.Add(this.panel16);
-            this.MenuVertical.Controls.Add(this.btnEfectivo);
             this.MenuVertical.Controls.Add(this.btnViaticos);
-            this.MenuVertical.Controls.Add(this.btnGastosVarios);
             this.MenuVertical.Controls.Add(this.button1);
             this.MenuVertical.Controls.Add(this.btnBalances);
-            this.MenuVertical.Controls.Add(this.panel2);
-            this.MenuVertical.Controls.Add(this.panel6);
-            this.MenuVertical.Controls.Add(this.panel4);
             this.MenuVertical.Controls.Add(this.panel1);
             this.MenuVertical.Controls.Add(this.btnProveedores);
-            this.MenuVertical.Controls.Add(this.btnOtrosIngresos);
-            this.MenuVertical.Controls.Add(this.panel5);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 38);
             this.MenuVertical.Name = "MenuVertical";
-            this.MenuVertical.Size = new System.Drawing.Size(220, 812);
+            this.MenuVertical.Size = new System.Drawing.Size(230, 853);
             this.MenuVertical.TabIndex = 1;
             // 
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.Color.Tomato;
-            this.panel21.Location = new System.Drawing.Point(-1, 768);
+            this.panel21.Location = new System.Drawing.Point(-1, 807);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(11, 32);
             this.panel21.TabIndex = 20;
@@ -230,7 +234,7 @@
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.Tomato;
-            this.panel19.Location = new System.Drawing.Point(0, 423);
+            this.panel19.Location = new System.Drawing.Point(0, 461);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(11, 32);
             this.panel19.TabIndex = 18;
@@ -244,7 +248,7 @@
             this.btnVales.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVales.Image = ((System.Drawing.Image)(resources.GetObject("btnVales.Image")));
             this.btnVales.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVales.Location = new System.Drawing.Point(11, 768);
+            this.btnVales.Location = new System.Drawing.Point(11, 807);
             this.btnVales.Name = "btnVales";
             this.btnVales.Size = new System.Drawing.Size(208, 32);
             this.btnVales.TabIndex = 21;
@@ -256,7 +260,7 @@
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.Tomato;
-            this.panel18.Location = new System.Drawing.Point(-1, 155);
+            this.panel18.Location = new System.Drawing.Point(-1, 193);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(11, 32);
             this.panel18.TabIndex = 6;
@@ -264,7 +268,7 @@
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.Tomato;
-            this.panel20.Location = new System.Drawing.Point(0, 726);
+            this.panel20.Location = new System.Drawing.Point(0, 765);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(11, 32);
             this.panel20.TabIndex = 18;
@@ -278,7 +282,7 @@
             this.btnDolares.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDolares.Image = ((System.Drawing.Image)(resources.GetObject("btnDolares.Image")));
             this.btnDolares.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDolares.Location = new System.Drawing.Point(12, 423);
+            this.btnDolares.Location = new System.Drawing.Point(12, 461);
             this.btnDolares.Name = "btnDolares";
             this.btnDolares.Size = new System.Drawing.Size(208, 32);
             this.btnDolares.TabIndex = 19;
@@ -296,7 +300,7 @@
             this.btnCuentasPorCobrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCuentasPorCobrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCuentasPorCobrar.Image")));
             this.btnCuentasPorCobrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCuentasPorCobrar.Location = new System.Drawing.Point(12, 726);
+            this.btnCuentasPorCobrar.Location = new System.Drawing.Point(12, 765);
             this.btnCuentasPorCobrar.Name = "btnCuentasPorCobrar";
             this.btnCuentasPorCobrar.Size = new System.Drawing.Size(208, 32);
             this.btnCuentasPorCobrar.TabIndex = 19;
@@ -314,7 +318,7 @@
             this.btnGastosAdministrativos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGastosAdministrativos.Image = ((System.Drawing.Image)(resources.GetObject("btnGastosAdministrativos.Image")));
             this.btnGastosAdministrativos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGastosAdministrativos.Location = new System.Drawing.Point(12, 193);
+            this.btnGastosAdministrativos.Location = new System.Drawing.Point(12, 231);
             this.btnGastosAdministrativos.Name = "btnGastosAdministrativos";
             this.btnGastosAdministrativos.Size = new System.Drawing.Size(208, 32);
             this.btnGastosAdministrativos.TabIndex = 3;
@@ -326,7 +330,7 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Tomato;
-            this.panel12.Location = new System.Drawing.Point(0, 650);
+            this.panel12.Location = new System.Drawing.Point(0, 689);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(11, 32);
             this.panel12.TabIndex = 6;
@@ -340,7 +344,7 @@
             this.btnPublicidad.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPublicidad.Image = ((System.Drawing.Image)(resources.GetObject("btnPublicidad.Image")));
             this.btnPublicidad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPublicidad.Location = new System.Drawing.Point(11, 155);
+            this.btnPublicidad.Location = new System.Drawing.Point(11, 193);
             this.btnPublicidad.Name = "btnPublicidad";
             this.btnPublicidad.Size = new System.Drawing.Size(208, 32);
             this.btnPublicidad.TabIndex = 7;
@@ -352,7 +356,7 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Tomato;
-            this.panel11.Location = new System.Drawing.Point(0, 688);
+            this.panel11.Location = new System.Drawing.Point(0, 727);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(11, 32);
             this.panel11.TabIndex = 16;
@@ -368,7 +372,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Tomato;
-            this.panel9.Location = new System.Drawing.Point(0, 461);
+            this.panel9.Location = new System.Drawing.Point(0, 500);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(11, 32);
             this.panel9.TabIndex = 4;
@@ -376,7 +380,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Tomato;
-            this.panel8.Location = new System.Drawing.Point(0, 385);
+            this.panel8.Location = new System.Drawing.Point(0, 423);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(11, 32);
             this.panel8.TabIndex = 2;
@@ -384,7 +388,7 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Tomato;
-            this.panel13.Location = new System.Drawing.Point(0, 612);
+            this.panel13.Location = new System.Drawing.Point(0, 651);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(11, 32);
             this.panel13.TabIndex = 7;
@@ -398,7 +402,7 @@
             this.btnGastosExtraordinarios.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGastosExtraordinarios.Image = ((System.Drawing.Image)(resources.GetObject("btnGastosExtraordinarios.Image")));
             this.btnGastosExtraordinarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGastosExtraordinarios.Location = new System.Drawing.Point(12, 231);
+            this.btnGastosExtraordinarios.Location = new System.Drawing.Point(12, 269);
             this.btnGastosExtraordinarios.Name = "btnGastosExtraordinarios";
             this.btnGastosExtraordinarios.Size = new System.Drawing.Size(208, 32);
             this.btnGastosExtraordinarios.TabIndex = 3;
@@ -416,7 +420,7 @@
             this.btnEmpleados.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpleados.Image = ((System.Drawing.Image)(resources.GetObject("btnEmpleados.Image")));
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(12, 461);
+            this.btnEmpleados.Location = new System.Drawing.Point(12, 500);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(208, 32);
             this.btnEmpleados.TabIndex = 5;
@@ -434,7 +438,7 @@
             this.btnVacaciones.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVacaciones.Image = ((System.Drawing.Image)(resources.GetObject("btnVacaciones.Image")));
             this.btnVacaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVacaciones.Location = new System.Drawing.Point(12, 650);
+            this.btnVacaciones.Location = new System.Drawing.Point(12, 689);
             this.btnVacaciones.Name = "btnVacaciones";
             this.btnVacaciones.Size = new System.Drawing.Size(208, 32);
             this.btnVacaciones.TabIndex = 11;
@@ -446,7 +450,7 @@
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.Tomato;
-            this.panel17.Location = new System.Drawing.Point(0, 79);
+            this.panel17.Location = new System.Drawing.Point(0, 117);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(10, 32);
             this.panel17.TabIndex = 4;
@@ -454,7 +458,7 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.Tomato;
-            this.panel14.Location = new System.Drawing.Point(0, 574);
+            this.panel14.Location = new System.Drawing.Point(0, 613);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(11, 32);
             this.panel14.TabIndex = 8;
@@ -462,7 +466,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Tomato;
-            this.panel7.Location = new System.Drawing.Point(0, 347);
+            this.panel7.Location = new System.Drawing.Point(0, 385);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(11, 32);
             this.panel7.TabIndex = 2;
@@ -476,7 +480,7 @@
             this.btnDeudas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeudas.Image = ((System.Drawing.Image)(resources.GetObject("btnDeudas.Image")));
             this.btnDeudas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeudas.Location = new System.Drawing.Point(12, 612);
+            this.btnDeudas.Location = new System.Drawing.Point(12, 651);
             this.btnDeudas.Name = "btnDeudas";
             this.btnDeudas.Size = new System.Drawing.Size(208, 32);
             this.btnDeudas.TabIndex = 12;
@@ -494,7 +498,7 @@
             this.btnGastosFijos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGastosFijos.Image = ((System.Drawing.Image)(resources.GetObject("btnGastosFijos.Image")));
             this.btnGastosFijos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGastosFijos.Location = new System.Drawing.Point(12, 117);
+            this.btnGastosFijos.Location = new System.Drawing.Point(12, 155);
             this.btnGastosFijos.Name = "btnGastosFijos";
             this.btnGastosFijos.Size = new System.Drawing.Size(208, 32);
             this.btnGastosFijos.TabIndex = 3;
@@ -512,7 +516,7 @@
             this.btnPlanilla.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlanilla.Image = ((System.Drawing.Image)(resources.GetObject("btnPlanilla.Image")));
             this.btnPlanilla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPlanilla.Location = new System.Drawing.Point(12, 498);
+            this.btnPlanilla.Location = new System.Drawing.Point(12, 537);
             this.btnPlanilla.Name = "btnPlanilla";
             this.btnPlanilla.Size = new System.Drawing.Size(208, 32);
             this.btnPlanilla.TabIndex = 15;
@@ -530,7 +534,7 @@
             this.btnVentas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVentas.Image = ((System.Drawing.Image)(resources.GetObject("btnVentas.Image")));
             this.btnVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVentas.Location = new System.Drawing.Point(12, 309);
+            this.btnVentas.Location = new System.Drawing.Point(12, 347);
             this.btnVentas.Name = "btnVentas";
             this.btnVentas.Size = new System.Drawing.Size(208, 32);
             this.btnVentas.TabIndex = 3;
@@ -548,7 +552,7 @@
             this.btnCCSS.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCCSS.Image = ((System.Drawing.Image)(resources.GetObject("btnCCSS.Image")));
             this.btnCCSS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCCSS.Location = new System.Drawing.Point(12, 536);
+            this.btnCCSS.Location = new System.Drawing.Point(12, 575);
             this.btnCCSS.Name = "btnCCSS";
             this.btnCCSS.Size = new System.Drawing.Size(208, 32);
             this.btnCCSS.TabIndex = 14;
@@ -560,7 +564,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Tomato;
-            this.panel3.Location = new System.Drawing.Point(0, 193);
+            this.panel3.Location = new System.Drawing.Point(0, 231);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(11, 32);
             this.panel3.TabIndex = 2;
@@ -568,7 +572,7 @@
             // panel15
             // 
             this.panel15.BackColor = System.Drawing.Color.Tomato;
-            this.panel15.Location = new System.Drawing.Point(0, 536);
+            this.panel15.Location = new System.Drawing.Point(0, 575);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(11, 32);
             this.panel15.TabIndex = 9;
@@ -582,7 +586,7 @@
             this.btnCuentasPorPagar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCuentasPorPagar.Image = ((System.Drawing.Image)(resources.GetObject("btnCuentasPorPagar.Image")));
             this.btnCuentasPorPagar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCuentasPorPagar.Location = new System.Drawing.Point(12, 79);
+            this.btnCuentasPorPagar.Location = new System.Drawing.Point(12, 117);
             this.btnCuentasPorPagar.Name = "btnCuentasPorPagar";
             this.btnCuentasPorPagar.Size = new System.Drawing.Size(208, 32);
             this.btnCuentasPorPagar.TabIndex = 5;
@@ -594,7 +598,7 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.Tomato;
-            this.panel16.Location = new System.Drawing.Point(0, 498);
+            this.panel16.Location = new System.Drawing.Point(0, 537);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(11, 32);
             this.panel16.TabIndex = 10;
@@ -608,7 +612,7 @@
             this.btnEfectivo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEfectivo.Image = ((System.Drawing.Image)(resources.GetObject("btnEfectivo.Image")));
             this.btnEfectivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEfectivo.Location = new System.Drawing.Point(12, 385);
+            this.btnEfectivo.Location = new System.Drawing.Point(12, 423);
             this.btnEfectivo.Name = "btnEfectivo";
             this.btnEfectivo.Size = new System.Drawing.Size(208, 32);
             this.btnEfectivo.TabIndex = 3;
@@ -626,7 +630,7 @@
             this.btnViaticos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViaticos.Image = ((System.Drawing.Image)(resources.GetObject("btnViaticos.Image")));
             this.btnViaticos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnViaticos.Location = new System.Drawing.Point(12, 574);
+            this.btnViaticos.Location = new System.Drawing.Point(12, 613);
             this.btnViaticos.Name = "btnViaticos";
             this.btnViaticos.Size = new System.Drawing.Size(208, 32);
             this.btnViaticos.TabIndex = 13;
@@ -644,7 +648,7 @@
             this.btnGastosVarios.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGastosVarios.Image = ((System.Drawing.Image)(resources.GetObject("btnGastosVarios.Image")));
             this.btnGastosVarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGastosVarios.Location = new System.Drawing.Point(12, 269);
+            this.btnGastosVarios.Location = new System.Drawing.Point(12, 307);
             this.btnGastosVarios.Name = "btnGastosVarios";
             this.btnGastosVarios.Size = new System.Drawing.Size(208, 32);
             this.btnGastosVarios.TabIndex = 3;
@@ -662,7 +666,7 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(12, 688);
+            this.button1.Location = new System.Drawing.Point(12, 727);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(208, 32);
             this.button1.TabIndex = 17;
@@ -692,7 +696,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Tomato;
-            this.panel2.Location = new System.Drawing.Point(0, 117);
+            this.panel2.Location = new System.Drawing.Point(0, 155);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(11, 32);
             this.panel2.TabIndex = 2;
@@ -700,7 +704,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Tomato;
-            this.panel6.Location = new System.Drawing.Point(0, 309);
+            this.panel6.Location = new System.Drawing.Point(0, 347);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(11, 32);
             this.panel6.TabIndex = 2;
@@ -708,7 +712,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Tomato;
-            this.panel4.Location = new System.Drawing.Point(0, 231);
+            this.panel4.Location = new System.Drawing.Point(0, 269);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(11, 32);
             this.panel4.TabIndex = 2;
@@ -748,7 +752,7 @@
             this.btnOtrosIngresos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOtrosIngresos.Image = ((System.Drawing.Image)(resources.GetObject("btnOtrosIngresos.Image")));
             this.btnOtrosIngresos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOtrosIngresos.Location = new System.Drawing.Point(12, 347);
+            this.btnOtrosIngresos.Location = new System.Drawing.Point(12, 385);
             this.btnOtrosIngresos.Name = "btnOtrosIngresos";
             this.btnOtrosIngresos.Size = new System.Drawing.Size(208, 32);
             this.btnOtrosIngresos.TabIndex = 3;
@@ -760,7 +764,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Tomato;
-            this.panel5.Location = new System.Drawing.Point(0, 269);
+            this.panel5.Location = new System.Drawing.Point(0, 307);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(11, 32);
             this.panel5.TabIndex = 2;
@@ -771,14 +775,40 @@
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(0, 0);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1231, 850);
+            this.panelContenedor.Size = new System.Drawing.Size(1231, 891);
             this.panelContenedor.TabIndex = 2;
+            // 
+            // btnProveedoresTransacciones
+            // 
+            this.btnProveedoresTransacciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProveedoresTransacciones.FlatAppearance.BorderSize = 0;
+            this.btnProveedoresTransacciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Tomato;
+            this.btnProveedoresTransacciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProveedoresTransacciones.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProveedoresTransacciones.Image = ((System.Drawing.Image)(resources.GetObject("btnProveedoresTransacciones.Image")));
+            this.btnProveedoresTransacciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProveedoresTransacciones.Location = new System.Drawing.Point(12, 79);
+            this.btnProveedoresTransacciones.Name = "btnProveedoresTransacciones";
+            this.btnProveedoresTransacciones.Size = new System.Drawing.Size(224, 32);
+            this.btnProveedoresTransacciones.TabIndex = 23;
+            this.btnProveedoresTransacciones.Text = "        Proveedores Transacciones";
+            this.btnProveedoresTransacciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProveedoresTransacciones.UseVisualStyleBackColor = true;
+            this.btnProveedoresTransacciones.Click += new System.EventHandler(this.btnProveedoresTransacciones_Click);
+            // 
+            // panel22
+            // 
+            this.panel22.BackColor = System.Drawing.Color.Tomato;
+            this.panel22.Location = new System.Drawing.Point(0, 79);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(11, 32);
+            this.panel22.TabIndex = 22;
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1231, 850);
+            this.ClientSize = new System.Drawing.Size(1231, 891);
             this.ControlBox = false;
             this.Controls.Add(this.MenuVertical);
             this.Controls.Add(this.BarraTitulo);
@@ -849,5 +879,7 @@
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Button btnCuentasPorPagar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnProveedoresTransacciones;
+        private System.Windows.Forms.Panel panel22;
     }
 }

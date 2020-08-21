@@ -34,20 +34,6 @@ namespace ProyectoTwentys.DataAccess
 
         }
 
-        public DataTable MostrarIngreso()
-        {
-
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "MostrarProveedorIngreso"; //PROCEDIMIENTO ALMACENADO
-            comando.CommandType = CommandType.StoredProcedure;
-            leer = comando.ExecuteReader();
-            tablaIngreso.Load(leer);
-            conexion.CerrarConexion();
-            return tablaIngreso;
-
-        }
-
-
         public void Insertar(int cedulaJuridica, string nombre, int telefono, string direccion)
         {
             
@@ -62,20 +48,6 @@ namespace ProyectoTwentys.DataAccess
             comando.Parameters.Clear();
         }
 
-        public void InsertarIngreso(int cedulaJuridica, string descripcion, DateTime fecha, double monto)
-        {
-
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "InsertarProveedorTransaccion";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@idProveedor", cedulaJuridica);
-            comando.Parameters.AddWithValue("@descripcion", descripcion);
-            comando.Parameters.AddWithValue("@fecha", fecha);
-            comando.Parameters.AddWithValue("@monto", monto);
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
-        }
-
         public void Actualizar(int cedulaJuridica, string nombre, int telefono, string direccion)
         {
 
@@ -86,22 +58,6 @@ namespace ProyectoTwentys.DataAccess
             comando.Parameters.AddWithValue("@nombre", nombre);
             comando.Parameters.AddWithValue("@telefono", telefono);
             comando.Parameters.AddWithValue("@direccion", direccion);
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
-
-        }
-
-        public void ActualizarIngreso(int idTransaccion, int cedulaJuridica, string descripcion, DateTime fecha, double monto)
-        {
-
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "ActualizarProveedorTransaccion";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@idTransaccion", idTransaccion);
-            comando.Parameters.AddWithValue("@idProveedor", cedulaJuridica);
-            comando.Parameters.AddWithValue("@descripcion", descripcion);
-            comando.Parameters.AddWithValue("@fecha", fecha);
-            comando.Parameters.AddWithValue("@monto", monto);
             comando.ExecuteNonQuery();
             comando.Parameters.Clear();
 
@@ -128,27 +84,14 @@ namespace ProyectoTwentys.DataAccess
             }
         }
 
-        public void EliminarIngreso(int cedulaJuridica, int idTransaccion)
-        {
 
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "EliminarProveedorTransaccion";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@idTransaccion", idTransaccion);
-            comando.Parameters.AddWithValue("@idProveedor", cedulaJuridica);
-
-            comando.ExecuteNonQuery();
-            comando.Parameters.Clear();
-        }
-
-
-        public DataTable Buscar(int cedulaJuridica)
+        public DataTable Buscar(string nombre)
         {
 
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "BuscarProveedor";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@idProveedor", cedulaJuridica);
+            comando.Parameters.AddWithValue("@nombre", nombre);
             comando.ExecuteNonQuery();
             leer = comando.ExecuteReader();
             comando.Parameters.Clear();
@@ -157,68 +100,5 @@ namespace ProyectoTwentys.DataAccess
             return tabla;
         }
 
-        public DataTable BuscarIngreso(int cedulaJuridica)
-        {
-
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "BuscarProveedorTransaccion";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@idProveedor", cedulaJuridica);
-            comando.ExecuteNonQuery();
-            leer = comando.ExecuteReader();
-            comando.Parameters.Clear();
-            tablaIngreso.Load(leer);
-            conexion.CerrarConexion();
-            return tablaIngreso;
-        }
-
-        public DataTable BuscarPorFechas(DateTime fechaInicio, DateTime fechaFinal)
-        {
-
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "BuscarProveedorPorFecha";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@fechaInicio", fechaInicio);
-            comando.Parameters.AddWithValue("@fechaFinal", fechaFinal);
-            comando.ExecuteNonQuery();
-            leer = comando.ExecuteReader();
-            comando.Parameters.Clear();
-            tablaIngreso.Load(leer);
-            conexion.CerrarConexion();
-            return tablaIngreso;
-        }
-
-        public DataTable ReporteProveedorPorCedula(int cedulaJuridica)
-        {
-
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "ReporteProveedorPorCedula";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@idProveedor", cedulaJuridica);
-            comando.ExecuteNonQuery();
-            leer = comando.ExecuteReader();
-            comando.Parameters.Clear();
-            tablaReportes.Load(leer);
-            conexion.CerrarConexion();
-
-            return tablaReportes;
-        }
-
-        public DataTable ReporteProveedorPorFecha(DateTime fechaInicio, DateTime fechaFinal)
-        {
-
-            comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "ReporteProveedorPorFecha";
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@fechaInicio", fechaInicio);
-            comando.Parameters.AddWithValue("@fechaFinal", fechaFinal);
-            comando.ExecuteNonQuery();
-            leer = comando.ExecuteReader();
-            comando.Parameters.Clear();
-            tablaReportes.Load(leer);
-            conexion.CerrarConexion();
-
-            return tablaReportes;
-        }
     }
 }

@@ -11,19 +11,21 @@ using ProyectoTwentys.Business;
 
 namespace ProyectoTwentys
 {
-    public partial class CuentasPorPagar : Form
+    public partial class Proveedores_Transacciones : Form
     {
-        PB_CuentasPorPagar objeto = new PB_CuentasPorPagar();
+
+        PB_ProveedoresTransacciones objeto = new PB_ProveedoresTransacciones();
         private bool Editar = false;
         string idProveedor = null;
-        string idCuentasPorPagar = null;
-
-        public CuentasPorPagar()
+        string idTransaccion = null;
+       
+       
+        public Proveedores_Transacciones()
         {
             InitializeComponent();
         }
 
-        private void CuentasPorPagar_Load(object sender, EventArgs e)
+        private void Proveedores_Load(object sender, EventArgs e)
         {
             Mostrar();
             tablaReportes.Visible = false;
@@ -34,7 +36,7 @@ namespace ProyectoTwentys
         //MOSTRAR
         private void Mostrar()
         {
-            PB_CuentasPorPagar objetoMostrar = new PB_CuentasPorPagar();
+            PB_ProveedoresTransacciones objetoMostrar = new PB_ProveedoresTransacciones();
             tablaIngresoInformacion.DataSource = objetoMostrar.Mostrar();
         }
 
@@ -53,7 +55,7 @@ namespace ProyectoTwentys
                     }
                     else
                     {
-                        objeto.Insertar(txtCedulaJuridica.Text, txtDescripcion.Text, txtFecha.Text, txtMonto.Text, txtEstado.Text);
+                        objeto.Insertar(txtCedulaJuridica.Text, txtDescripcion.Text, txtFecha.Text, txtMonto.Text);
                         MessageBox.Show("Se insertó correctamente", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Mostrar();
                         Limpiar();
@@ -77,7 +79,7 @@ namespace ProyectoTwentys
                     }
                     else
                     {
-                        objeto.Actualizar(idCuentasPorPagar, txtCedulaJuridica.Text, txtDescripcion.Text, txtFecha.Value, txtMonto.TextLength, txtEstado.Text);
+                        objeto.Actualizar(idTransaccion, txtCedulaJuridica.Text, txtDescripcion.Text, txtFecha.Value, txtMonto.TextLength);
                         MessageBox.Show("Se editó correctamente", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Mostrar();
                         Editar = false;
@@ -102,12 +104,11 @@ namespace ProyectoTwentys
             {
                 Editar = true;
 
-                idCuentasPorPagar = tablaIngresoInformacion.CurrentRow.Cells["idCuentasPorPagar"].Value.ToString();
+                idTransaccion = tablaIngresoInformacion.CurrentRow.Cells["idTransaccion"].Value.ToString();
                 txtCedulaJuridica.Text = tablaIngresoInformacion.CurrentRow.Cells["idProveedor"].Value.ToString();
                 txtDescripcion.Text = tablaIngresoInformacion.CurrentRow.Cells["descripcion"].Value.ToString();
                 txtFecha.Text = tablaIngresoInformacion.CurrentRow.Cells["fecha"].Value.ToString();
                 txtMonto.Text = tablaIngresoInformacion.CurrentRow.Cells["monto"].Value.ToString();
-                txtEstado.Text = tablaIngresoInformacion.CurrentRow.Cells["estado"].Value.ToString();
                 txtCedulaJuridica.Enabled = false;
             }
             else
@@ -123,12 +124,12 @@ namespace ProyectoTwentys
             if (tablaIngresoInformacion.SelectedRows.Count > 0)
             {
                 idProveedor = tablaIngresoInformacion.CurrentRow.Cells["idProveedor"].Value.ToString();
-                idCuentasPorPagar = tablaIngresoInformacion.CurrentRow.Cells["idCuentasPorPagar"].Value.ToString();
+                idTransaccion = tablaIngresoInformacion.CurrentRow.Cells["idTransaccion"].Value.ToString();
 
                 DialogResult dialogResult = MessageBox.Show("Seguro que desea eliminar los datos?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    objeto.Eliminar(idProveedor, idCuentasPorPagar);
+                    objeto.Eliminar(idProveedor, idTransaccion);
                     MessageBox.Show("Se eliminó correctamente", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Mostrar();
                 }
@@ -141,7 +142,7 @@ namespace ProyectoTwentys
         //BUSCAR
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            PB_CuentasPorPagar objetoMostrar = new PB_CuentasPorPagar();
+            PB_ProveedoresTransacciones objetoMostrar = new PB_ProveedoresTransacciones();
 
 
             if (txtCedulaJuridica.Text != "")
@@ -169,25 +170,22 @@ namespace ProyectoTwentys
         private void btnAceptarReportes_Click(object sender, EventArgs e)
         {
 
-            PB_CuentasPorPagar objetoMostrar = new PB_CuentasPorPagar();
+            PB_ProveedoresTransacciones objetoMostrar = new PB_ProveedoresTransacciones();
 
             try
             {
 
-                if (txtCedulaJuridicaReporte.Text != "" && txtFechaInicio.CustomFormat != " " && txtFechaFinal.CustomFormat != " ")
-                {
+                if (txtCedulaJuridicaReporte.Text != "" && txtFechaInicio.CustomFormat != " " && txtFechaFinal.CustomFormat != " ") {
 
                     MessageBox.Show("No se pudo encontrar los datos.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
-                else if (txtCedulaJuridicaReporte.Text == "" && txtFechaInicio.CustomFormat == " " && txtFechaFinal.CustomFormat == " ")
-                {
+                else if (txtCedulaJuridicaReporte.Text == "" && txtFechaInicio.CustomFormat == " " && txtFechaFinal.CustomFormat == " ") {
 
                     MessageBox.Show("No se pudo encontrar los datos.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
-                else if (txtFechaInicio.CustomFormat == " " && txtFechaFinal.CustomFormat != " " || txtFechaInicio.CustomFormat != " " && txtFechaFinal.CustomFormat == " ")
-                {
+                else if (txtFechaInicio.CustomFormat == " " && txtFechaFinal.CustomFormat != " " || txtFechaInicio.CustomFormat != " " && txtFechaFinal.CustomFormat == " ") {
 
                     MessageBox.Show("No se pudo encontrar los datos.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -197,7 +195,7 @@ namespace ProyectoTwentys
                     idProveedor = txtCedulaJuridicaReporte.Text;
                     tablaIngresoInformacion.DataSource = objetoMostrar.Buscar(idProveedor);
 
-                    tablaReportes.DataSource = objetoMostrar.ReporteCuentasPorPagarPorCedula(idProveedor);
+                    tablaReportes.DataSource = objetoMostrar.ReporteProveedorPorCedula(idProveedor);
 
                     txtTotalReporte.Text = tablaReportes.CurrentRow.Cells["SumaMonto"].Value.ToString();
 
@@ -219,7 +217,7 @@ namespace ProyectoTwentys
 
                     tablaIngresoInformacion.DataSource = objetoMostrar.BuscarPorFechas(txtFechaInicio.Text, txtFechaFinal.Text);
 
-                    tablaReportes.DataSource = objetoMostrar.ReporteCuentasPorPagarPorFecha(txtFechaInicio.Text, txtFechaFinal.Text);
+                    tablaReportes.DataSource = objetoMostrar.ReporteProveedorPorFecha(txtFechaInicio.Text, txtFechaFinal.Text);
 
                     txtTotalReporte.Text = tablaReportes.CurrentRow.Cells["SumaMonto"].Value.ToString();
 
@@ -261,12 +259,12 @@ namespace ProyectoTwentys
             Mostrar();
         }
 
-
-        private void btnLimpiarReportes_Click(object sender, EventArgs e)
+       
+        private void btnLimpiarReportesPorCedula_Click(object sender, EventArgs e)
         {
             txtCedulaJuridicaReporte.Clear();
             txtFechaInicio.CustomFormat = " ";
-            txtFechaFinal.CustomFormat = " ";
+            txtFechaFinal.CustomFormat = " "; 
             txtTotalReporte.Clear();
         }
 
@@ -280,7 +278,6 @@ namespace ProyectoTwentys
                 txtDescripcion.Text = "";
                 txtFecha.CustomFormat = " ";
                 txtMonto.Clear();
-                txtEstado.Text = "";
 
             }
             else
@@ -289,20 +286,19 @@ namespace ProyectoTwentys
                 txtDescripcion.Text = "";
                 txtFecha.CustomFormat = " ";
                 txtMonto.Clear();
-                txtEstado.Text = "";
             }
 
         }
 
         //VALIDACIONES 
-        private void txtCedulaJuridicaIngreso_KeyPress(object sender, KeyPressEventArgs e)
+       private void txtCedulaJuridicaIngreso_KeyPress(object sender, KeyPressEventArgs e)
         {
             Validaciones.soloNumeros(e);
         }
 
         private void txtMonto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Validaciones.soloNumeros(e);
+           Validaciones.soloNumeros(e);
         }
 
         private void txtCedulaJuridicaReporte_KeyPress(object sender, KeyPressEventArgs e)
@@ -325,13 +321,12 @@ namespace ProyectoTwentys
         }
 
         private void txtFecha_ValueChanged(object sender, EventArgs e)
-        {
+        {            
             txtFecha.CustomFormat = "dd/MM/yyyy";
 
-            if (txtFecha.Value > DateTime.Today)
-            {
+            if (txtFecha.Value > DateTime.Today) {
 
-                MessageBox.Show("Fecha no válida.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Fecha no válida." , "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 txtFecha.CustomFormat = " ";
 
@@ -340,15 +335,15 @@ namespace ProyectoTwentys
 
         private void txtFecha_KeyDown(object sender, KeyEventArgs e)
 
-        {
-            txtFecha.CustomFormat = " ";
+        { 
+                txtFecha.CustomFormat = " ";
         }
 
         private void txtFechaInicio_ValueChanged(object sender, EventArgs e)
         {
             txtFechaInicio.CustomFormat = "dd/MM/yyyy";
 
-
+          
         }
 
         private void txtFechaInicio_KeyDown(object sender, KeyEventArgs e)
@@ -397,7 +392,8 @@ namespace ProyectoTwentys
             txtCedulaJuridicaReporte.Text = proveedoresConsulta.idProveedorBuscar;
 
         }
-
+    }
        
     }
-}
+    
+

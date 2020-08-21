@@ -79,6 +79,11 @@ namespace ProyectoTwentys
             AbrirFormHija(new Proveedores());
         }
 
+        private void btnProveedoresTransacciones_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Proveedores_Transacciones());
+        }
+
         private void btnCuentasPorPagar_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new CuentasPorPagar());
@@ -175,5 +180,7 @@ namespace ProyectoTwentys
         {
             AbrirFormHija(new Vales());
         }
+
+        
     }
 }
