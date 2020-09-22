@@ -55,11 +55,41 @@
     <Compile Include="Balances.Designer.cs">
       <DependentUpon>Balances.cs</DependentUpon>
     </Compile>
+    <Compile Include="CuentasPorCobrarConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CuentasPorCobrarConsulta.Designer.cs">
+      <DependentUpon>CuentasPorCobrarConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresosVarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresosVarios.Designer.cs">
+      <DependentUpon>IngresosVarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadosConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadosConsulta.Designer.cs">
+      <DependentUpon>EmpleadosConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeudasConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeudasConsulta.Designer.cs">
+      <DependentUpon>DeudasConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProveedoresConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ProveedoresConsulta.Designer.cs">
       <DependentUpon>ProveedoresConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bonos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bonos.Designer.cs">
+      <DependentUpon>Bonos.cs</DependentUpon>
     </Compile>
     <Compile Include="ProveedoresTransacciones.cs">
       <SubType>Form</SubType>
@@ -120,12 +150,6 @@
     </Compile>
     <Compile Include="Viaticos.Designer.cs">
       <DependentUpon>Viaticos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IngresosVarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IngresosVarios.Designer.cs">
-      <DependentUpon>IngresosVarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Empleados.cs">
       <SubType>Form</SubType>
@@ -217,8 +241,20 @@
     <EmbeddedResource Include="Balances.resx">
       <DependentUpon>Balances.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CuentasPorCobrarConsulta.resx">
+      <DependentUpon>CuentasPorCobrarConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadosConsulta.resx">
+      <DependentUpon>EmpleadosConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeudasConsulta.resx">
+      <DependentUpon>DeudasConsulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProveedoresConsulta.resx">
       <DependentUpon>ProveedoresConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bonos.resx">
+      <DependentUpon>Bonos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProveedoresTransacciones.resx">
       <DependentUpon>ProveedoresTransacciones.cs</DependentUpon>
@@ -249,9 +285,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Viaticos.resx">
       <DependentUpon>Viaticos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IngresosVarios.resx">
-      <DependentUpon>IngresosVarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>

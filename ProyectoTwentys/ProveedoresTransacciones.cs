@@ -79,7 +79,7 @@ namespace ProyectoTwentys
                     }
                     else
                     {
-                        objeto.Actualizar(idTransaccion, txtCedulaJuridica.Text, txtDescripcion.Text, txtFecha.Value, txtMonto.TextLength);
+                        objeto.Actualizar(idTransaccion, txtCedulaJuridica.Text, txtDescripcion.Text, txtFecha.Value, txtMonto.Text);
                         MessageBox.Show("Se editó correctamente", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Mostrar();
                         Editar = false;

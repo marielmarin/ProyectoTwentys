@@ -42,10 +42,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PB_Balances.cs" />
+    <Compile Include="PB_Bonos.cs" />
+    <Compile Include="PB_CCSS.cs" />
+    <Compile Include="PB_CuentasPorCobrar.cs" />
+    <Compile Include="PB_Deudas.cs" />
+    <Compile Include="PB_Empleados.cs" />
+    <Compile Include="PB_GastosAdministrativos.cs" />
+    <Compile Include="PB_GastosExtraordinarios.cs" />
+    <Compile Include="PB_GastosFijos.cs" />
+    <Compile Include="PB_GastosVarios.cs" />
+    <Compile Include="PB_Planilla.cs" />
     <Compile Include="PB_Proveedores.cs" />
     <Compile Include="PB_CuentasPorPagar.cs" />
     <Compile Include="PB_ProveedoresTransacciones.cs" />
+    <Compile Include="PB_Publicidad.cs" />
+    <Compile Include="PB_SobrantesYFaltantes.cs" />
     <Compile Include="PB_Usuarios.cs" />
+    <Compile Include="PB_Vacaciones.cs" />
+    <Compile Include="PB_Vales.cs" />
+    <Compile Include="PB_Viaticos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validaciones.cs" />
   </ItemGroup>

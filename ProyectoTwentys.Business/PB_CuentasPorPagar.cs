@@ -28,7 +28,7 @@ namespace ProyectoTwentys.Business
             objeto.Insertar(Convert.ToInt32(cedulaJuridica), descripcion, Convert.ToDateTime(fecha), Convert.ToDouble(monto), estado);
         }
 
-        public void Actualizar(string idTransaccion, string cedulaJuridica, string descripcion, DateTime fecha, double monto, string estado)
+        public void Actualizar(string idTransaccion, string cedulaJuridica, string descripcion, DateTime fecha, string monto, string estado)
         {
             objeto.Actualizar(Convert.ToInt32(idTransaccion), Convert.ToInt32(cedulaJuridica), descripcion, Convert.ToDateTime(fecha), Convert.ToDouble(monto), estado);
         }    

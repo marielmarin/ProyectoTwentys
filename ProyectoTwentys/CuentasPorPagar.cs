@@ -77,7 +77,7 @@ namespace ProyectoTwentys
                     }
                     else
                     {
-                        objeto.Actualizar(idCuentasPorPagar, txtCedulaJuridica.Text, txtDescripcion.Text, txtFecha.Value, txtMonto.TextLength, txtEstado.Text);
+                        objeto.Actualizar(idCuentasPorPagar, txtCedulaJuridica.Text, txtDescripcion.Text, txtFecha.Value, txtMonto.Text, txtEstado.Text);
                         MessageBox.Show("Se editó correctamente", "ÉXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Mostrar();
                         Editar = false;
@@ -315,7 +315,7 @@ namespace ProyectoTwentys
 
             bool datosVacios = false;
 
-            if (txtCedulaJuridica.Text == "" | txtDescripcion.Text == "" | txtFecha.Text == "" | txtMonto.Text == "")
+            if (txtCedulaJuridica.Text == "" | txtDescripcion.Text == "" | txtFecha.Text == "" | txtMonto.Text == "" | txtEstado.Text == "")
             {
                 datosVacios = true;
             }

@@ -158,7 +158,12 @@ namespace ProyectoTwentys
 
         private void btnDeudas_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new Deudas());
+            AbrirFormHija(new panelContenedor());
+        }
+
+        private void btnBonos_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new Bonos());
         }
 
         private void btnVacaciones_Click(object sender, EventArgs e)
@@ -181,6 +186,6 @@ namespace ProyectoTwentys
             AbrirFormHija(new Vales());
         }
 
-        
+      
     }
 }

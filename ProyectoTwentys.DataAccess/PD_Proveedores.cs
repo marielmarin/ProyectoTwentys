@@ -16,8 +16,6 @@ namespace ProyectoTwentys.DataAccess
 
         SqlDataReader leer;
         DataTable tabla = new DataTable();
-        DataTable tablaIngreso = new DataTable();
-        DataTable tablaReportes = new DataTable();
         SqlCommand comando = new SqlCommand();
         
 

@@ -208,20 +208,6 @@ namespace ProyectoTwentys
             Validaciones.soloNumeros(e);
         }
 
-        private void txtCedulaJuridicaIngreso_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            Validaciones.soloNumeros(e);
-        }
-
-        private void txtMonto_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            Validaciones.soloNumeros(e);
-        }
-
-        private void txtCedulaJuridicaReporte_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            Validaciones.soloNumeros(e);
-        }
 
         private bool validarCamposVacios() {
 

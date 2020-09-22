@@ -16,9 +16,7 @@ C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwe
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.Vacaciones.resources
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.SobrantesYFaltantes.resources
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.Viaticos.resources
-C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.IngresosVarios.resources
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.Empleados.resources
-C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.Deudas.resources
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.Ventas.resources
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.GastosExtraordinarios.resources
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.GastosFijos.resources
@@ -41,3 +39,8 @@ C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\bin\Debug\ProyectoTwe
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\bin\Debug\ProyectoTwentys.Business.pdb
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.Proveedores_Transacciones.resources
 C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.ProveedoresConsulta.resources
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.EmpleadosConsulta.resources
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.DeudasConsulta.resources
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.Bonos.resources
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.CuentasPorCobrarConsulta.resources
+C:\Users\User\source\repos\ProyectoTwentys\ProyectoTwentys\obj\Debug\ProyectoTwentys.panelContenedor.resources

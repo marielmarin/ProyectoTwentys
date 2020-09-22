@@ -93,6 +93,7 @@
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(210, 27);
             this.txtMonto.TabIndex = 22;
+            this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMonto_KeyPress);
             // 
             // lblMonto
             // 
@@ -131,6 +132,7 @@
             this.txtCedulaJuridica.Name = "txtCedulaJuridica";
             this.txtCedulaJuridica.Size = new System.Drawing.Size(210, 27);
             this.txtCedulaJuridica.TabIndex = 17;
+            this.txtCedulaJuridica.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCedulaJuridicaIngreso_KeyPress);
             // 
             // lblEstado
             // 
@@ -326,9 +328,9 @@
             this.btnBuscarProveedor2.ForeColor = System.Drawing.Color.LightGray;
             this.btnBuscarProveedor2.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarProveedor2.Image")));
             this.btnBuscarProveedor2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBuscarProveedor2.Location = new System.Drawing.Point(673, 517);
+            this.btnBuscarProveedor2.Location = new System.Drawing.Point(668, 517);
             this.btnBuscarProveedor2.Name = "btnBuscarProveedor2";
-            this.btnBuscarProveedor2.Size = new System.Drawing.Size(33, 27);
+            this.btnBuscarProveedor2.Size = new System.Drawing.Size(35, 27);
             this.btnBuscarProveedor2.TabIndex = 79;
             this.btnBuscarProveedor2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscarProveedor2.UseVisualStyleBackColor = false;
@@ -405,6 +407,7 @@
             this.txtCedulaJuridicaReporte.Name = "txtCedulaJuridicaReporte";
             this.txtCedulaJuridicaReporte.Size = new System.Drawing.Size(210, 27);
             this.txtCedulaJuridicaReporte.TabIndex = 74;
+            this.txtCedulaJuridicaReporte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCedulaJuridicaReporte_KeyPress);
             // 
             // lblFechaReportePorFecha
             // 

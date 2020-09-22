@@ -43,10 +43,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="PD_Balances.cs" />
+    <Compile Include="PD_Bonos.cs" />
+    <Compile Include="PD_CCSS.cs" />
+    <Compile Include="PD_CuentasPorCobrar.cs" />
+    <Compile Include="PD_Deudas.cs" />
+    <Compile Include="PD_Empleados.cs" />
+    <Compile Include="PD_GastosAdministrativos.cs" />
+    <Compile Include="PD_GastosExtraordinarios.cs" />
+    <Compile Include="PD_GastosFijos.cs" />
+    <Compile Include="PD_GastosVarios.cs" />
+    <Compile Include="PD_Planilla.cs" />
     <Compile Include="PD_Proveedores.cs" />
     <Compile Include="PD_CuentasPorPagar.cs" />
     <Compile Include="PD_ProveedoresTransacciones.cs" />
+    <Compile Include="PD_Publicidad.cs" />
+    <Compile Include="PD_SobrantesYFaltantes.cs" />
     <Compile Include="PD_Usuarios.cs" />
+    <Compile Include="PD_Vacaciones.cs" />
+    <Compile Include="PD_Vales.cs" />
+    <Compile Include="PD_Viaticos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

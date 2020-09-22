@@ -29,95 +29,80 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GastosFijos));
-            this.lblProveedores = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblGastosFijos = new System.Windows.Forms.Label();
+            this.lblIngresoDeInformacion = new System.Windows.Forms.Label();
+            this.txtMonto = new System.Windows.Forms.TextBox();
+            this.lblMonto = new System.Windows.Forms.Label();
+            this.lblDescripcion = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tablaIngresoInformacion = new System.Windows.Forms.DataGridView();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.btnAceptar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
+            this.lblReportes = new System.Windows.Forms.Label();
+            this.btnLimpiarTabla = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.tablaReportes = new System.Windows.Forms.DataGridView();
+            this.txtDescripcionReportes = new System.Windows.Forms.TextBox();
+            this.lblDescripcionReportes = new System.Windows.Forms.Label();
+            this.btnLimpiarReportesPorCedula = new System.Windows.Forms.Button();
+            this.btnAceptarReportes = new System.Windows.Forms.Button();
+            this.txtTotalReporte = new System.Windows.Forms.TextBox();
+            this.lbloTotalReportePorCedula = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaIngresoInformacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaReportes)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblProveedores
+            // lblGastosFijos
             // 
-            this.lblProveedores.AutoSize = true;
-            this.lblProveedores.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProveedores.Location = new System.Drawing.Point(237, 69);
-            this.lblProveedores.Name = "lblProveedores";
-            this.lblProveedores.Size = new System.Drawing.Size(156, 25);
-            this.lblProveedores.TabIndex = 0;
-            this.lblProveedores.Text = "GASTOS FIJOS";
+            this.lblGastosFijos.AutoSize = true;
+            this.lblGastosFijos.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGastosFijos.Location = new System.Drawing.Point(237, 69);
+            this.lblGastosFijos.Name = "lblGastosFijos";
+            this.lblGastosFijos.Size = new System.Drawing.Size(156, 25);
+            this.lblGastosFijos.TabIndex = 0;
+            this.lblGastosFijos.Text = "GASTOS FIJOS";
             // 
-            // label3
+            // lblIngresoDeInformacion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(238, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 19);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Ingreso de información ";
+            this.lblIngresoDeInformacion.AutoSize = true;
+            this.lblIngresoDeInformacion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIngresoDeInformacion.Location = new System.Drawing.Point(238, 188);
+            this.lblIngresoDeInformacion.Name = "lblIngresoDeInformacion";
+            this.lblIngresoDeInformacion.Size = new System.Drawing.Size(192, 19);
+            this.lblIngresoDeInformacion.TabIndex = 8;
+            this.lblIngresoDeInformacion.Text = "Ingreso de información ";
             // 
-            // textBox5
+            // txtMonto
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(412, 256);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(210, 27);
-            this.textBox5.TabIndex = 22;
+            this.txtMonto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonto.Location = new System.Drawing.Point(412, 290);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(210, 27);
+            this.txtMonto.TabIndex = 22;
+            this.txtMonto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMonto_KeyPress);
             // 
-            // label4
+            // lblMonto
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(238, 262);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 21);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Monto";
+            this.lblMonto.AutoSize = true;
+            this.lblMonto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMonto.Location = new System.Drawing.Point(238, 296);
+            this.lblMonto.Name = "lblMonto";
+            this.lblMonto.Size = new System.Drawing.Size(62, 21);
+            this.lblMonto.TabIndex = 20;
+            this.lblMonto.Text = "Monto";
             // 
-            // label6
+            // lblDescripcion
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(238, 214);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 21);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Descripción";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(412, 165);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(210, 27);
-            this.textBox7.TabIndex = 17;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(745, 117);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 19);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Reportes";
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(238, 249);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(100, 21);
+            this.lblDescripcion.TabIndex = 18;
+            this.lblDescripcion.Text = "Descripción";
             // 
             // textBox9
             // 
@@ -127,190 +112,235 @@
             this.textBox9.Size = new System.Drawing.Size(0, 27);
             this.textBox9.TabIndex = 32;
             // 
-            // label10
+            // tablaIngresoInformacion
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(745, 171);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(31, 21);
-            this.label10.TabIndex = 31;
-            this.label10.Text = "ID ";
+            this.tablaIngresoInformacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaIngresoInformacion.Location = new System.Drawing.Point(750, 204);
+            this.tablaIngresoInformacion.Name = "tablaIngresoInformacion";
+            this.tablaIngresoInformacion.Size = new System.Drawing.Size(486, 342);
+            this.tablaIngresoInformacion.TabIndex = 44;
             // 
-            // textBox10
+            // txtDescripcion
             // 
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(847, 168);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(210, 27);
-            this.textBox10.TabIndex = 37;
+            this.txtDescripcion.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcion.Location = new System.Drawing.Point(412, 243);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(210, 27);
+            this.txtDescripcion.TabIndex = 48;
             // 
-            // dataGridView1
+            // btnAceptar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(749, 262);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(469, 342);
-            this.dataGridView1.TabIndex = 44;
+            this.btnAceptar.BackColor = System.Drawing.Color.DimGray;
+            this.btnAceptar.FlatAppearance.BorderSize = 0;
+            this.btnAceptar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnAceptar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAceptar.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptar.Image")));
+            this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAceptar.Location = new System.Drawing.Point(406, 353);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(106, 27);
+            this.btnAceptar.TabIndex = 45;
+            this.btnAceptar.Text = "ACEPTAR";
+            this.btnAceptar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAceptar.UseVisualStyleBackColor = false;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
-            // textBox1
+            // btnLimpiar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(412, 208);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 27);
-            this.textBox1.TabIndex = 48;
+            this.btnLimpiar.BackColor = System.Drawing.Color.DimGray;
+            this.btnLimpiar.FlatAppearance.BorderSize = 0;
+            this.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpiar.Image")));
+            this.btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpiar.Location = new System.Drawing.Point(528, 353);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(106, 27);
+            this.btnLimpiar.TabIndex = 55;
+            this.btnLimpiar.Text = "LIMPIAR ";
+            this.btnLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
-            // label1
+            // lblReportes
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(238, 171);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 21);
-            this.label1.TabIndex = 47;
-            this.label1.Text = "ID ";
+            this.lblReportes.AutoSize = true;
+            this.lblReportes.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReportes.Location = new System.Drawing.Point(237, 427);
+            this.lblReportes.Name = "lblReportes";
+            this.lblReportes.Size = new System.Drawing.Size(108, 25);
+            this.lblReportes.TabIndex = 56;
+            this.lblReportes.Text = "REPORTES";
             // 
-            // button6
+            // btnLimpiarTabla
             // 
-            this.button6.BackColor = System.Drawing.Color.DimGray;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.LightGray;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(898, 214);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(106, 27);
-            this.button6.TabIndex = 45;
-            this.button6.Text = "ACEPTAR";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnLimpiarTabla.BackColor = System.Drawing.Color.DimGray;
+            this.btnLimpiarTabla.FlatAppearance.BorderSize = 0;
+            this.btnLimpiarTabla.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnLimpiarTabla.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLimpiarTabla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarTabla.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarTabla.ForeColor = System.Drawing.Color.LightGray;
+            this.btnLimpiarTabla.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpiarTabla.Image")));
+            this.btnLimpiarTabla.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpiarTabla.Location = new System.Drawing.Point(1126, 581);
+            this.btnLimpiarTabla.Name = "btnLimpiarTabla";
+            this.btnLimpiarTabla.Size = new System.Drawing.Size(110, 27);
+            this.btnLimpiarTabla.TabIndex = 61;
+            this.btnLimpiarTabla.Text = "LIMPIAR ";
+            this.btnLimpiarTabla.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiarTabla.UseVisualStyleBackColor = false;
+            this.btnLimpiarTabla.Click += new System.EventHandler(this.btnLimpiarTabla_Click);
             // 
-            // button7
+            // btnBuscar
             // 
-            this.button7.BackColor = System.Drawing.Color.DimGray;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.LightGray;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(1104, 167);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(35, 27);
-            this.button7.TabIndex = 43;
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnBuscar.BackColor = System.Drawing.Color.DimGray;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnBuscar.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar.Image")));
+            this.btnBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBuscar.Location = new System.Drawing.Point(750, 581);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(105, 27);
+            this.btnBuscar.TabIndex = 60;
+            this.btnBuscar.Text = "BUSCAR";
+            this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // button2
+            // btnEliminar
             // 
-            this.button2.BackColor = System.Drawing.Color.DimGray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.LightGray;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(1063, 168);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(35, 27);
-            this.button2.TabIndex = 42;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.Color.DimGray;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(1003, 581);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(117, 27);
+            this.btnEliminar.TabIndex = 59;
+            this.btnEliminar.Text = "ELIMINAR";
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // button9
+            // btnActualizar
             // 
-            this.button9.BackColor = System.Drawing.Color.DimGray;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.LightGray;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(673, 165);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(35, 27);
-            this.button9.TabIndex = 41;
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnActualizar.BackColor = System.Drawing.Color.DimGray;
+            this.btnActualizar.FlatAppearance.BorderSize = 0;
+            this.btnActualizar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnActualizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.Color.LightGray;
+            this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
+            this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizar.Location = new System.Drawing.Point(861, 581);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(134, 27);
+            this.btnActualizar.TabIndex = 58;
+            this.btnActualizar.Text = "ACTUALIZAR";
+            this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // button8
+            // tablaReportes
             // 
-            this.button8.BackColor = System.Drawing.Color.DimGray;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.LightGray;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(527, 308);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(117, 27);
-            this.button8.TabIndex = 40;
-            this.button8.Text = "ELIMINAR";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.UseVisualStyleBackColor = false;
+            this.tablaReportes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaReportes.Location = new System.Drawing.Point(406, 657);
+            this.tablaReportes.Name = "tablaReportes";
+            this.tablaReportes.Size = new System.Drawing.Size(131, 83);
+            this.tablaReportes.TabIndex = 67;
             // 
-            // button4
+            // txtDescripcionReportes
             // 
-            this.button4.BackColor = System.Drawing.Color.DimGray;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.LightGray;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(387, 308);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(134, 27);
-            this.button4.TabIndex = 39;
-            this.button4.Text = "ACTUALIZAR";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.txtDescripcionReportes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescripcionReportes.Location = new System.Drawing.Point(412, 468);
+            this.txtDescripcionReportes.Name = "txtDescripcionReportes";
+            this.txtDescripcionReportes.Size = new System.Drawing.Size(210, 27);
+            this.txtDescripcionReportes.TabIndex = 69;
             // 
-            // button5
+            // lblDescripcionReportes
             // 
-            this.button5.BackColor = System.Drawing.Color.DimGray;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.LightGray;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(262, 308);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 27);
-            this.button5.TabIndex = 29;
-            this.button5.Text = "AGREGAR";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
+            this.lblDescripcionReportes.AutoSize = true;
+            this.lblDescripcionReportes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcionReportes.Location = new System.Drawing.Point(238, 474);
+            this.lblDescripcionReportes.Name = "lblDescripcionReportes";
+            this.lblDescripcionReportes.Size = new System.Drawing.Size(100, 21);
+            this.lblDescripcionReportes.TabIndex = 68;
+            this.lblDescripcionReportes.Text = "Descripción";
             // 
-            // button1
+            // btnLimpiarReportesPorCedula
             // 
-            this.button1.BackColor = System.Drawing.Color.DimGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(632, 165);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(35, 27);
-            this.button1.TabIndex = 25;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnLimpiarReportesPorCedula.BackColor = System.Drawing.Color.DimGray;
+            this.btnLimpiarReportesPorCedula.FlatAppearance.BorderSize = 0;
+            this.btnLimpiarReportesPorCedula.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnLimpiarReportesPorCedula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnLimpiarReportesPorCedula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiarReportesPorCedula.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarReportesPorCedula.ForeColor = System.Drawing.Color.LightGray;
+            this.btnLimpiarReportesPorCedula.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpiarReportesPorCedula.Image")));
+            this.btnLimpiarReportesPorCedula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLimpiarReportesPorCedula.Location = new System.Drawing.Point(528, 528);
+            this.btnLimpiarReportesPorCedula.Name = "btnLimpiarReportesPorCedula";
+            this.btnLimpiarReportesPorCedula.Size = new System.Drawing.Size(106, 27);
+            this.btnLimpiarReportesPorCedula.TabIndex = 71;
+            this.btnLimpiarReportesPorCedula.Text = "LIMPIAR ";
+            this.btnLimpiarReportesPorCedula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLimpiarReportesPorCedula.UseVisualStyleBackColor = false;
+            this.btnLimpiarReportesPorCedula.Click += new System.EventHandler(this.btnLimpiarReportes_Click);
+            // 
+            // btnAceptarReportes
+            // 
+            this.btnAceptarReportes.BackColor = System.Drawing.Color.DimGray;
+            this.btnAceptarReportes.FlatAppearance.BorderSize = 0;
+            this.btnAceptarReportes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.btnAceptarReportes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAceptarReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptarReportes.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptarReportes.ForeColor = System.Drawing.Color.LightGray;
+            this.btnAceptarReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnAceptarReportes.Image")));
+            this.btnAceptarReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAceptarReportes.Location = new System.Drawing.Point(406, 528);
+            this.btnAceptarReportes.Name = "btnAceptarReportes";
+            this.btnAceptarReportes.Size = new System.Drawing.Size(106, 27);
+            this.btnAceptarReportes.TabIndex = 70;
+            this.btnAceptarReportes.Text = "ACEPTAR";
+            this.btnAceptarReportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAceptarReportes.UseVisualStyleBackColor = false;
+            this.btnAceptarReportes.Click += new System.EventHandler(this.btnAceptarReportes_Click);
+            // 
+            // txtTotalReporte
+            // 
+            this.txtTotalReporte.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalReporte.Location = new System.Drawing.Point(411, 587);
+            this.txtTotalReporte.Name = "txtTotalReporte";
+            this.txtTotalReporte.Size = new System.Drawing.Size(210, 27);
+            this.txtTotalReporte.TabIndex = 73;
+            // 
+            // lbloTotalReportePorCedula
+            // 
+            this.lbloTotalReportePorCedula.AutoSize = true;
+            this.lbloTotalReportePorCedula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbloTotalReportePorCedula.Location = new System.Drawing.Point(238, 587);
+            this.lbloTotalReportePorCedula.Name = "lbloTotalReportePorCedula";
+            this.lbloTotalReportePorCedula.Size = new System.Drawing.Size(111, 21);
+            this.lbloTotalReportePorCedula.TabIndex = 72;
+            this.lbloTotalReportePorCedula.Text = "Total reporte";
             // 
             // GastosFijos
             // 
@@ -318,32 +348,35 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1231, 650);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox10);
+            this.ClientSize = new System.Drawing.Size(1318, 920);
+            this.Controls.Add(this.txtTotalReporte);
+            this.Controls.Add(this.lbloTotalReportePorCedula);
+            this.Controls.Add(this.btnLimpiarReportesPorCedula);
+            this.Controls.Add(this.btnAceptarReportes);
+            this.Controls.Add(this.txtDescripcionReportes);
+            this.Controls.Add(this.lblDescripcionReportes);
+            this.Controls.Add(this.tablaReportes);
+            this.Controls.Add(this.btnLimpiarTabla);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.lblReportes);
+            this.Controls.Add(this.btnLimpiar);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.btnAceptar);
+            this.Controls.Add(this.tablaIngresoInformacion);
             this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.lblProveedores);
+            this.Controls.Add(this.txtMonto);
+            this.Controls.Add(this.lblMonto);
+            this.Controls.Add(this.lblDescripcion);
+            this.Controls.Add(this.lblIngresoDeInformacion);
+            this.Controls.Add(this.lblGastosFijos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GastosFijos";
             this.Text = "Proveedores";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.GastosFijos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tablaIngresoInformacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaReportes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,26 +384,27 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblProveedores;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblGastosFijos;
+        private System.Windows.Forms.Label lblIngresoDeInformacion;
+        private System.Windows.Forms.TextBox txtMonto;
+        private System.Windows.Forms.Label lblMonto;
+        private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView tablaIngresoInformacion;
+        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Label lblReportes;
+        private System.Windows.Forms.Button btnLimpiarTabla;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.DataGridView tablaReportes;
+        private System.Windows.Forms.TextBox txtDescripcionReportes;
+        private System.Windows.Forms.Label lblDescripcionReportes;
+        private System.Windows.Forms.Button btnLimpiarReportesPorCedula;
+        private System.Windows.Forms.Button btnAceptarReportes;
+        private System.Windows.Forms.TextBox txtTotalReporte;
+        private System.Windows.Forms.Label lbloTotalReportePorCedula;
     }
 }

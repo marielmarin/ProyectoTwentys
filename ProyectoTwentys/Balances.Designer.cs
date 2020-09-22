@@ -40,15 +40,28 @@
             this.lblProveedores = new System.Windows.Forms.Label();
             this.lblUtilidad = new System.Windows.Forms.Label();
             this.lblGastosExtraordinarios = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtVentas = new System.Windows.Forms.TextBox();
+            this.txtIngresos = new System.Windows.Forms.TextBox();
+            this.txtPlanilla = new System.Windows.Forms.TextBox();
+            this.txtGastosAdministrativos = new System.Windows.Forms.TextBox();
+            this.txtGastosFijos = new System.Windows.Forms.TextBox();
+            this.txtGastosVarios = new System.Windows.Forms.TextBox();
+            this.txtProveedores = new System.Windows.Forms.TextBox();
+            this.txtUtilidad = new System.Windows.Forms.TextBox();
+            this.txtGastosExtraordinarios = new System.Windows.Forms.TextBox();
+            this.tablaReportes = new System.Windows.Forms.DataGridView();
+            this.lblPorcetajeAdministrativos = new System.Windows.Forms.Label();
+            this.lblPorcentajeAdministrativos = new System.Windows.Forms.Label();
+            this.lblPorcentajeUtilidad = new System.Windows.Forms.Label();
+            this.lblPorcentajeFijos = new System.Windows.Forms.Label();
+            this.lblPorcentajePlanilla = new System.Windows.Forms.Label();
+            this.lblPorcentajeProveedores = new System.Windows.Forms.Label();
+            this.lblPorcentajeExtraordinarios = new System.Windows.Forms.Label();
+            this.lblPorcentajeVarios = new System.Windows.Forms.Label();
+            this.lblPorcentajeIngesos = new System.Windows.Forms.Label();
+            this.lblPorcentajeVentas = new System.Windows.Forms.Label();
+            this.lblPorcentajeOtrosIngresos = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.tablaReportes)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBalances
@@ -76,7 +89,7 @@
             this.txtOtrosIngresos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOtrosIngresos.Location = new System.Drawing.Point(537, 134);
             this.txtOtrosIngresos.Name = "txtOtrosIngresos";
-            this.txtOtrosIngresos.Size = new System.Drawing.Size(280, 27);
+            this.txtOtrosIngresos.Size = new System.Drawing.Size(155, 27);
             this.txtOtrosIngresos.TabIndex = 2;
             // 
             // lblVentas
@@ -169,77 +182,194 @@
             this.lblGastosExtraordinarios.TabIndex = 11;
             this.lblGastosExtraordinarios.Text = "Gastos Extraordinarios";
             // 
-            // textBox1
+            // txtVentas
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(537, 181);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 27);
-            this.textBox1.TabIndex = 12;
+            this.txtVentas.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVentas.Location = new System.Drawing.Point(537, 181);
+            this.txtVentas.Name = "txtVentas";
+            this.txtVentas.Size = new System.Drawing.Size(155, 27);
+            this.txtVentas.TabIndex = 12;
             // 
-            // textBox2
+            // txtIngresos
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(537, 226);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(280, 27);
-            this.textBox2.TabIndex = 13;
+            this.txtIngresos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIngresos.Location = new System.Drawing.Point(537, 226);
+            this.txtIngresos.Name = "txtIngresos";
+            this.txtIngresos.Size = new System.Drawing.Size(155, 27);
+            this.txtIngresos.TabIndex = 13;
             // 
-            // textBox3
+            // txtPlanilla
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(537, 268);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(280, 27);
-            this.textBox3.TabIndex = 14;
+            this.txtPlanilla.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlanilla.Location = new System.Drawing.Point(537, 268);
+            this.txtPlanilla.Name = "txtPlanilla";
+            this.txtPlanilla.Size = new System.Drawing.Size(155, 27);
+            this.txtPlanilla.TabIndex = 14;
             // 
-            // textBox4
+            // txtGastosAdministrativos
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(537, 311);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(280, 27);
-            this.textBox4.TabIndex = 15;
+            this.txtGastosAdministrativos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGastosAdministrativos.Location = new System.Drawing.Point(534, 311);
+            this.txtGastosAdministrativos.Name = "txtGastosAdministrativos";
+            this.txtGastosAdministrativos.Size = new System.Drawing.Size(155, 27);
+            this.txtGastosAdministrativos.TabIndex = 15;
             // 
-            // textBox5
+            // txtGastosFijos
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(537, 353);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(280, 27);
-            this.textBox5.TabIndex = 16;
+            this.txtGastosFijos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGastosFijos.Location = new System.Drawing.Point(537, 353);
+            this.txtGastosFijos.Name = "txtGastosFijos";
+            this.txtGastosFijos.Size = new System.Drawing.Size(155, 27);
+            this.txtGastosFijos.TabIndex = 16;
             // 
-            // textBox6
+            // txtGastosVarios
             // 
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(537, 393);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(280, 27);
-            this.textBox6.TabIndex = 17;
+            this.txtGastosVarios.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGastosVarios.Location = new System.Drawing.Point(534, 393);
+            this.txtGastosVarios.Name = "txtGastosVarios";
+            this.txtGastosVarios.Size = new System.Drawing.Size(158, 27);
+            this.txtGastosVarios.TabIndex = 17;
             // 
-            // textBox7
+            // txtProveedores
             // 
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(537, 433);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(280, 27);
-            this.textBox7.TabIndex = 18;
+            this.txtProveedores.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProveedores.Location = new System.Drawing.Point(537, 433);
+            this.txtProveedores.Name = "txtProveedores";
+            this.txtProveedores.Size = new System.Drawing.Size(155, 27);
+            this.txtProveedores.TabIndex = 18;
             // 
-            // textBox8
+            // txtUtilidad
             // 
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(537, 472);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(280, 27);
-            this.textBox8.TabIndex = 19;
+            this.txtUtilidad.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUtilidad.Location = new System.Drawing.Point(537, 472);
+            this.txtUtilidad.Name = "txtUtilidad";
+            this.txtUtilidad.Size = new System.Drawing.Size(155, 27);
+            this.txtUtilidad.TabIndex = 19;
             // 
-            // textBox9
+            // txtGastosExtraordinarios
             // 
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(537, 518);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(280, 27);
-            this.textBox9.TabIndex = 20;
+            this.txtGastosExtraordinarios.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGastosExtraordinarios.Location = new System.Drawing.Point(537, 518);
+            this.txtGastosExtraordinarios.Name = "txtGastosExtraordinarios";
+            this.txtGastosExtraordinarios.Size = new System.Drawing.Size(155, 27);
+            this.txtGastosExtraordinarios.TabIndex = 20;
+            // 
+            // tablaReportes
+            // 
+            this.tablaReportes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tablaReportes.Location = new System.Drawing.Point(84, 353);
+            this.tablaReportes.Name = "tablaReportes";
+            this.tablaReportes.Size = new System.Drawing.Size(131, 83);
+            this.tablaReportes.TabIndex = 99;
+            // 
+            // lblPorcetajeAdministrativos
+            // 
+            this.lblPorcetajeAdministrativos.AutoSize = true;
+            this.lblPorcetajeAdministrativos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcetajeAdministrativos.Location = new System.Drawing.Point(710, 317);
+            this.lblPorcetajeAdministrativos.Name = "lblPorcetajeAdministrativos";
+            this.lblPorcetajeAdministrativos.Size = new System.Drawing.Size(0, 21);
+            this.lblPorcetajeAdministrativos.TabIndex = 100;
+            // 
+            // lblPorcentajeAdministrativos
+            // 
+            this.lblPorcentajeAdministrativos.AutoSize = true;
+            this.lblPorcentajeAdministrativos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPorcentajeAdministrativos.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeAdministrativos.Location = new System.Drawing.Point(716, 311);
+            this.lblPorcentajeAdministrativos.Name = "lblPorcentajeAdministrativos";
+            this.lblPorcentajeAdministrativos.Size = new System.Drawing.Size(2, 27);
+            this.lblPorcentajeAdministrativos.TabIndex = 101;
+            // 
+            // lblPorcentajeUtilidad
+            // 
+            this.lblPorcentajeUtilidad.AutoSize = true;
+            this.lblPorcentajeUtilidad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPorcentajeUtilidad.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeUtilidad.Location = new System.Drawing.Point(716, 472);
+            this.lblPorcentajeUtilidad.Name = "lblPorcentajeUtilidad";
+            this.lblPorcentajeUtilidad.Size = new System.Drawing.Size(2, 27);
+            this.lblPorcentajeUtilidad.TabIndex = 102;
+            // 
+            // lblPorcentajeFijos
+            // 
+            this.lblPorcentajeFijos.AutoSize = true;
+            this.lblPorcentajeFijos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPorcentajeFijos.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeFijos.Location = new System.Drawing.Point(716, 353);
+            this.lblPorcentajeFijos.Name = "lblPorcentajeFijos";
+            this.lblPorcentajeFijos.Size = new System.Drawing.Size(2, 27);
+            this.lblPorcentajeFijos.TabIndex = 104;
+            // 
+            // lblPorcentajePlanilla
+            // 
+            this.lblPorcentajePlanilla.AutoSize = true;
+            this.lblPorcentajePlanilla.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPorcentajePlanilla.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajePlanilla.Location = new System.Drawing.Point(716, 268);
+            this.lblPorcentajePlanilla.Name = "lblPorcentajePlanilla";
+            this.lblPorcentajePlanilla.Size = new System.Drawing.Size(2, 27);
+            this.lblPorcentajePlanilla.TabIndex = 105;
+            // 
+            // lblPorcentajeProveedores
+            // 
+            this.lblPorcentajeProveedores.AutoSize = true;
+            this.lblPorcentajeProveedores.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPorcentajeProveedores.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeProveedores.Location = new System.Drawing.Point(716, 433);
+            this.lblPorcentajeProveedores.Name = "lblPorcentajeProveedores";
+            this.lblPorcentajeProveedores.Size = new System.Drawing.Size(2, 27);
+            this.lblPorcentajeProveedores.TabIndex = 106;
+            // 
+            // lblPorcentajeExtraordinarios
+            // 
+            this.lblPorcentajeExtraordinarios.AutoSize = true;
+            this.lblPorcentajeExtraordinarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPorcentajeExtraordinarios.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeExtraordinarios.Location = new System.Drawing.Point(716, 515);
+            this.lblPorcentajeExtraordinarios.Name = "lblPorcentajeExtraordinarios";
+            this.lblPorcentajeExtraordinarios.Size = new System.Drawing.Size(2, 27);
+            this.lblPorcentajeExtraordinarios.TabIndex = 107;
+            // 
+            // lblPorcentajeVarios
+            // 
+            this.lblPorcentajeVarios.AutoSize = true;
+            this.lblPorcentajeVarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPorcentajeVarios.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeVarios.Location = new System.Drawing.Point(716, 390);
+            this.lblPorcentajeVarios.Name = "lblPorcentajeVarios";
+            this.lblPorcentajeVarios.Size = new System.Drawing.Size(2, 27);
+            this.lblPorcentajeVarios.TabIndex = 108;
+            // 
+            // lblPorcentajeIngesos
+            // 
+            this.lblPorcentajeIngesos.AutoSize = true;
+            this.lblPorcentajeIngesos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPorcentajeIngesos.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeIngesos.Location = new System.Drawing.Point(715, 226);
+            this.lblPorcentajeIngesos.Name = "lblPorcentajeIngesos";
+            this.lblPorcentajeIngesos.Size = new System.Drawing.Size(2, 27);
+            this.lblPorcentajeIngesos.TabIndex = 109;
+            // 
+            // lblPorcentajeVentas
+            // 
+            this.lblPorcentajeVentas.AutoSize = true;
+            this.lblPorcentajeVentas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPorcentajeVentas.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeVentas.Location = new System.Drawing.Point(716, 181);
+            this.lblPorcentajeVentas.Name = "lblPorcentajeVentas";
+            this.lblPorcentajeVentas.Size = new System.Drawing.Size(2, 27);
+            this.lblPorcentajeVentas.TabIndex = 110;
+            // 
+            // lblPorcentajeOtrosIngresos
+            // 
+            this.lblPorcentajeOtrosIngresos.AutoSize = true;
+            this.lblPorcentajeOtrosIngresos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPorcentajeOtrosIngresos.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentajeOtrosIngresos.Location = new System.Drawing.Point(716, 134);
+            this.lblPorcentajeOtrosIngresos.Name = "lblPorcentajeOtrosIngresos";
+            this.lblPorcentajeOtrosIngresos.Size = new System.Drawing.Size(2, 27);
+            this.lblPorcentajeOtrosIngresos.TabIndex = 111;
             // 
             // Balances
             // 
@@ -247,15 +377,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1231, 650);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblPorcentajeOtrosIngresos);
+            this.Controls.Add(this.lblPorcentajeVentas);
+            this.Controls.Add(this.lblPorcentajeIngesos);
+            this.Controls.Add(this.lblPorcentajeVarios);
+            this.Controls.Add(this.lblPorcentajeExtraordinarios);
+            this.Controls.Add(this.lblPorcentajeProveedores);
+            this.Controls.Add(this.lblPorcentajePlanilla);
+            this.Controls.Add(this.lblPorcentajeFijos);
+            this.Controls.Add(this.lblPorcentajeUtilidad);
+            this.Controls.Add(this.lblPorcentajeAdministrativos);
+            this.Controls.Add(this.lblPorcetajeAdministrativos);
+            this.Controls.Add(this.tablaReportes);
+            this.Controls.Add(this.txtGastosExtraordinarios);
+            this.Controls.Add(this.txtUtilidad);
+            this.Controls.Add(this.txtProveedores);
+            this.Controls.Add(this.txtGastosVarios);
+            this.Controls.Add(this.txtGastosFijos);
+            this.Controls.Add(this.txtGastosAdministrativos);
+            this.Controls.Add(this.txtPlanilla);
+            this.Controls.Add(this.txtIngresos);
+            this.Controls.Add(this.txtVentas);
             this.Controls.Add(this.lblGastosExtraordinarios);
             this.Controls.Add(this.lblUtilidad);
             this.Controls.Add(this.lblProveedores);
@@ -271,6 +413,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Balances";
             this.Text = "Balances";
+            this.Load += new System.EventHandler(this.Balances_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.tablaReportes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,14 +434,26 @@
         private System.Windows.Forms.Label lblProveedores;
         private System.Windows.Forms.Label lblUtilidad;
         private System.Windows.Forms.Label lblGastosExtraordinarios;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtVentas;
+        private System.Windows.Forms.TextBox txtIngresos;
+        private System.Windows.Forms.TextBox txtPlanilla;
+        private System.Windows.Forms.TextBox txtGastosAdministrativos;
+        private System.Windows.Forms.TextBox txtGastosFijos;
+        private System.Windows.Forms.TextBox txtGastosVarios;
+        private System.Windows.Forms.TextBox txtProveedores;
+        private System.Windows.Forms.TextBox txtUtilidad;
+        private System.Windows.Forms.TextBox txtGastosExtraordinarios;
+        private System.Windows.Forms.DataGridView tablaReportes;
+        private System.Windows.Forms.Label lblPorcetajeAdministrativos;
+        private System.Windows.Forms.Label lblPorcentajeAdministrativos;
+        private System.Windows.Forms.Label lblPorcentajeUtilidad;
+        private System.Windows.Forms.Label lblPorcentajeFijos;
+        private System.Windows.Forms.Label lblPorcentajePlanilla;
+        private System.Windows.Forms.Label lblPorcentajeProveedores;
+        private System.Windows.Forms.Label lblPorcentajeExtraordinarios;
+        private System.Windows.Forms.Label lblPorcentajeVarios;
+        private System.Windows.Forms.Label lblPorcentajeIngesos;
+        private System.Windows.Forms.Label lblPorcentajeVentas;
+        private System.Windows.Forms.Label lblPorcentajeOtrosIngresos;
     }
 }
